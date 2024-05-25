@@ -13,6 +13,11 @@ def adminlogin():
     return render_template("adminlogin.html", role='Admin')
 
 
+@app.route("/Admin")
+def admin():
+    return render_template("Admin.html")
+
+
 # JOBS = [{
 #     'id': 1,
 #     'title': 'Data Analyst',
