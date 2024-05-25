@@ -1,0 +1,91 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #A9A9A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+/* Button container styles */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Admin button styles */
+.admin {
+    background-color: #007bff;
+}
+
+.admin:hover {
+    background-color: #0056b3;
+}
+
+/* Employee button styles */
+.employee {
+    background-color: #28a745;
+}
+
+.employee:hover {
+    background-color: #218838;
+}
+
+/* Manager button styles */
+.manager {
+    background-color: #ffc107;
+}
+
+.manager:hover {
+    background-color: #e0a800;
+}
+
+/* Button hover effect */
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Button shadow effect */
+.btn {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button gradient effect */
+.admin, .employee, .manager {
+    background-image: linear-gradient(to right, #f78ca0, #f9748f, #fd868c, #fe9a8b, #fec3a6);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="admin_login.css"> -->
+</head>
+<body>
+    <div class="login-container">
+        <a href ="dashboard.html" class="link"><h4>Home</h4></a>
+        <h2> {{role}} Login</h2>
+        <form id="loginForm" action="/submit" method = "POST">
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" placeholder="Enter your AdminId" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button id="login" type="submit">Login</button>
+            <!-- <button id="signupAdminBtn" type="submit">Request for being Admin</button> -->
+
+            <!-- <script>
+                // Add event listener to the Signup Admin button
+                document.getElementById('signupAdminBtn').addEventListener('click', function() {
+                    // Open the registration form page
+                    window.open('admin_signup.html', '_self');
+                });
+            </script> -->
+
+
+        </form>
+    </div>
+</body>
+</html>
